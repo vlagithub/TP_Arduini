@@ -1,0 +1,175 @@
+* {    box-sizing: border-box;
+}
+
+html {
+  font-family:'Lato', sans-serif;
+  color: #131212;
+}
+
+ul {
+  list-style: none;
+  font-size: 100%;
+  text-align: center;
+}
+
+
+h1{
+  font-size:300% ;
+}
+
+h2{
+  font-size: 200%;
+}
+
+h3{
+  font-size: 150%;
+  color:whitesmoke; 
+  background-color:#313030;
+  margin-right: 20px;
+  margin-top: 40px;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+h4{
+  font-size: 120%;
+}
+
+
+.header {
+  background-color: #9933cc;
+  text-align: center;
+  padding: 40px 0px 43px 0px;
+ 
+  }
+
+.foto{
+  background-color: #9933cc;
+  padding: 10px;
+}
+  
+
+img {
+  border: 5px solid #555;
+  border-radius: 50%;
+  margin:auto;
+  display: block;
+  }
+
+  /*Separador entre header y experiencia"*/
+.col-12{
+  background-color: #33b5e5;
+}
+
+/*Separador que contiene "Medica veterinaria"*/
+.titulodegrado {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 18px 18px 18px 30px;
+}
+
+
+/*area lateral izquierda*/
+.informacion_personal {
+  background-color: #33b5e5;
+  padding: 15px;
+  text-align: center;
+  height: 800px
+}
+/*lista desplegable*/
+#info-personal {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color:whitesmoke;
+  margin-top: 20px;
+  border-radius: 12%;
+  display: none;
+}
+
+/*items de la lista desplegable*/
+#info-personal ul {
+  display: block;
+  font-size: 18px;
+  text-align:left;
+  line-height: 1.5;
+   background-color: #ddd;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#boton {
+  padding: 20px;
+  font-size: 150%;
+  background-color: #9933cc;
+  border: none;
+  border-radius: 12%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position:relative;
+  top: 30px;
+  }
+
+
+/*cuerpo del cv*/
+.experiencia_habilidades{
+  padding: 15px;
+  text-align: center;
+  background-color: whitesmoke;
+  height: 800px;
+}
+ 
+footer {
+  
+  clear: both;
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+  text-align: center;
+  padding: 3px;
+  background-color: #0099cc;
+  height: fit-content;
+  
+  }
+
+  [class*="col-"] {
+    float: left;
+      }
+      
+  /* Para computadoras de escritorio: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+ /* Para tablet y evitar que se solape el contenido al achicar ventana en PC: */
+  @media only screen and (min-width: 790px) and (max-width: 991px){
+    .col-3 {width: 40%;}
+    .col-9 {width: 60%;}
+  }
+  
+  @media only screen and (max-width: 790px) {
+    /* Para celulares: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .informacion_personal {
+    height: 400px
+  }
+}
+
+ 
