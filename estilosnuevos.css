@@ -4,43 +4,48 @@
 html {
   font-family:'Lato', sans-serif;
   color: #131212;
+  
+  
 }
 
 ul {
-  list-style: none;
+  
+  list-style-type: none;
+ 
   font-size: 100%;
-  text-align: center;
+  padding-right: 40px;
 }
-
-
+  
 h1{
   font-size:300% ;
+  text-align: center;
 }
 
 h2{
   font-size: 200%;
+  text-align: center;
 }
 
 h3{
   font-size: 150%;
   color:whitesmoke; 
   background-color:#313030;
-  margin-right: 20px;
   margin-top: 40px;
   border-radius: 20px;
-  margin-left: 20px;
-  padding-left: 20px;
-  text-align: center;
+  padding: 5px;
 }
 
+   
 h4{
   font-size: 120%;
-}
+  }
 
+p {
+  font-size: 110%;
+  }
 
 .header {
   background-color: #9933cc;
-  text-align: center;
   padding: 40px 0px 43px 0px;
  
   }
@@ -78,16 +83,15 @@ img {
   background-color: #33b5e5;
   padding: 15px;
   text-align: center;
-  height: 800px
+  height: 1200px
 }
+
 /*lista desplegable*/
 #info-personal {
   width: 100%;
   padding: 50px 0;
-  text-align: center;
   background-color:whitesmoke;
   margin-top: 20px;
-  border-radius: 12%;
   display: none;
 }
 
@@ -104,38 +108,65 @@ img {
 }
 
 #boton {
-  padding: 20px;
+  padding: 15px 32px;
   font-size: 150%;
   background-color: #9933cc;
   border: none;
-  border-radius: 12%;
   display: block;
   margin-right: auto;
   margin-left: auto;
   position:relative;
   top: 30px;
+    }
+
+  #boton:hover {
+      opacity: 0.7;
   }
 
 
 /*cuerpo del cv*/
 .experiencia_habilidades{
-  padding: 15px;
-  text-align: center;
+  padding: 35px;
   background-color: whitesmoke;
-  height: 800px;
+  height: 1200px;
+  text-align: center
+  
 }
  
 footer {
-  
-  clear: both;
-  position: relative;
-  height: 200px;
   margin-top: -200px;
   text-align: center;
-  padding: 3px;
+  padding: 8px 350px 8px 8px;
   background-color: #0099cc;
   height: fit-content;
+  display: flex;
+  justify-content:right;
   
+}
+
+ 
+
+  
+/* boton linkedin*/
+  .fa {
+    padding: 4px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 5px;
+    
+}
+  
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    
   }
 
   [class*="col-"] {
@@ -160,6 +191,11 @@ footer {
   @media only screen and (min-width: 790px) and (max-width: 991px){
     .col-3 {width: 40%;}
     .col-9 {width: 60%;}
+
+    footer{
+      justify-content:center;
+      padding: 8px;
+    }
   }
   
   @media only screen and (max-width: 790px) {
@@ -169,6 +205,13 @@ footer {
     }
     .informacion_personal {
     height: 400px
+  }
+  .experiencia_habilidades{
+    height: 1650px;
+  }
+  footer{
+    justify-content:center;
+    padding: 8px;
   }
 }
 
