@@ -4,14 +4,10 @@
 html {
   font-family:'Lato', sans-serif;
   color: #131212;
-  
-  
-}
+  }
 
 ul {
-  
   list-style-type: none;
- 
   font-size: 100%;
   padding-right: 40px;
 }
@@ -34,7 +30,6 @@ h3{
   border-radius: 20px;
   padding: 5px;
 }
-
    
 h4{
   font-size: 120%;
@@ -55,7 +50,6 @@ p {
   padding: 10px;
 }
   
-
 img {
   border: 5px solid #555;
   border-radius: 50%;
@@ -81,16 +75,17 @@ img {
 /*area lateral izquierda*/
 .informacion_personal {
   background-color: #33b5e5;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
-  height: 1200px
+  height: 1300px;
 }
 
 /*lista desplegable*/
 #info-personal {
   width: 100%;
-  padding: 50px 0;
-  background-color:whitesmoke;
+  padding: 20px 10px 20px 20px;
+  background-color:#313030;
+  border-radius: 6px;
   margin-top: 20px;
   display: none;
 }
@@ -99,10 +94,10 @@ img {
 #info-personal ul {
   display: block;
   font-size: 18px;
-  text-align:left;
+  text-align:center;
   line-height: 1.5;
-   background-color: #ddd;
-  color: black;
+   background-color: #313030;
+  color:whitesmoke;
   text-decoration: none;
   padding: 10px;
 }
@@ -110,8 +105,10 @@ img {
 #boton {
   padding: 15px 32px;
   font-size: 150%;
+  color: whitesmoke;
   background-color: #9933cc;
   border: none;
+  border-radius: 6px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -128,24 +125,21 @@ img {
 .experiencia_habilidades{
   padding: 35px;
   background-color: whitesmoke;
-  height: 1200px;
+  height: 1300px;
   text-align: center
-  
-}
+  }
  
 footer {
   margin-top: -200px;
   text-align: center;
-  padding: 8px 350px 8px 8px;
   background-color: #0099cc;
   height: fit-content;
   display: flex;
-  justify-content:right;
-  
-}
+  justify-content:center;
+  padding: 8px;
+  }
 
  
-
   
 /* boton linkedin*/
   .fa {
@@ -188,31 +182,33 @@ footer {
   .col-12 {width: 100%;}
 
  /* Para tablet y evitar que se solape el contenido al achicar ventana en PC: */
-  @media only screen and (min-width: 790px) and (max-width: 991px){
+  @media only screen and (min-width: 700px) and (max-width: 991px){
     .col-3 {width: 40%;}
     .col-9 {width: 60%;}
-
-    footer{
-      justify-content:center;
-      padding: 8px;
-    }
-  }
   
-  @media only screen and (max-width: 790px) {
+
+    
+    .informacion_personal {
+      height: 1550px;
+    }
+    .experiencia_habilidades{
+      height: 1550px;
+    }
+   
+}
+
+  @media only screen and (max-width: 700px) {
     /* Para celulares: */
     [class*="col-"] {
       width: 100%;
     }
     .informacion_personal {
-    height: 400px
+    height: 400px;
   }
   .experiencia_habilidades{
     height: 1650px;
   }
-  footer{
-    justify-content:center;
-    padding: 8px;
-  }
+  
 }
 
  
